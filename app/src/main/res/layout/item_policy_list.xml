@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundNormalNormal"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/policyBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="17dp"
+        android:paddingBottom="33dp"
+        android:paddingHorizontal="17dp"
+        >
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/notosanskr_semibold"
+            android:textSize="16dp"
+            android:text=""
+            android:layout_marginEnd="17dp"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:id="@+id/localTagText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskr_semibold"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="@id/titleText"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:text=""
+            android:textColor="@color/neutral40"
+            android:includeFontPadding="false"
+            />
+
+
+        <TextView
+            android:id="@+id/termText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/localTagText"
+            app:layout_constraintStart_toStartOf="@id/localTagText"
+            android:textSize="14sp"
+            android:textColor="@color/neutral40"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
